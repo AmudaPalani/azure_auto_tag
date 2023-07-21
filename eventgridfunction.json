@@ -7,7 +7,7 @@
         "uniqueString": "[uniqueString(subscription().subscriptionId)]",
         "identityName": "[concat('id-autotagger-', variables('uniqueString'))]",
         "planName": "[concat('plan-autotagger-', variables('uniqueString'))]",
-        "storageAccountName": "[concat('st', variables('uniqueString'))]",
+        "storageAccountName": "[concat('sa', variables('uniqueString'))]",
         "storageAccountId": "[resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountName'))]",
         "functionName": "[concat('func-autotagger-', variables('uniqueString'))]",
         "eventGridTopic": "[concat('evt-autotagger-', variables('uniqueString'))]",
