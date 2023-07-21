@@ -5,14 +5,14 @@
     "functions": [],
     "variables": {
         "uniqueString": "[uniqueString(subscription().subscriptionId)]",
-        "identityName": "[concat('id-autotagger-', variables('uniqueString'))]",
-        "planName": "[concat('plan-autotagger-', variables('uniqueString'))]",
-        "storageAccountName": "[concat('sa', variables('uniqueString'))]",
+        "identityName": "[concat('id-autotagger2-', variables('uniqueString'))]",
+        "planName": "[concat('plan-autotagger2-', variables('uniqueString'))]",
+        "storageAccountName": "[concat('sa2', variables('uniqueString'))]",
         "storageAccountId": "[resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountName'))]",
-        "functionName": "[concat('func-autotagger2-', variables('uniqueString'))]",
-        "eventGridTopic": "[concat('evt-autotagger-', variables('uniqueString'))]",
-        "eventGridSubscriptionName": "[concat('evs-autotagger-', variables('uniqueString'))]",
-        "appInsightsName": "[concat('insights-autotagger-', variables('uniqueString'))]",
+        "functionName": "[concat('func-autotagger22-', variables('uniqueString'))]",
+        "eventGridTopic": "[concat('evt-autotagger2-', variables('uniqueString'))]",
+        "eventGridSubscriptionName": "[concat('evs-autotagger2-', variables('uniqueString'))]",
+        "appInsightsName": "[concat('insights-autotagger2-', variables('uniqueString'))]",
         "functionAppRepo": "https://github.com/AmudaPalani/azure_auto_tag.git"
     },
     "resources": [
