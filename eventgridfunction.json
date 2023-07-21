@@ -44,6 +44,10 @@
             "sku": {
                 "name": "Standard_LRS",
                 "tier": "Standard"
+            },
+                        "properties": {
+                "supportsHttpsTrafficOnly": true,
+                "minimumTlsVersion": "TLS1_2"
             }
         },
         {
